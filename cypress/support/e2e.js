@@ -14,4 +14,29 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
-import './commands'
+import { Runnable } from "mocha";
+import "./commands";
+
+import addContext from "mochawesome/addContext";
+
+Cypress.on("test:after:run", (test, runnable) => {
+  if (test.state == "failed") {
+    const screenshot = `${Cypress.spec.name}/${runnable.parent.title} -- ${test.title} (failed).png`;
+    addContext({ test }, screenshot);
+  }
+});
+
+Cypress.on("fail", (err, runnable) => {
+  console.log(err.message);
+  if (err.name == "AssertionError") {
+    throw err;
+  } else {
+    return false;
+  }
+});
+
+Cypress.on("uncaught:expection", (err, runnable) => {
+  console.log("error", err);
+  console.log("runnable", runnable);
+  return err;
+});
