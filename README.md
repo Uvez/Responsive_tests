@@ -5,10 +5,11 @@
 - Install NodeJS and NPM package manager.
 - GIT Bash terminal (for Windows)
 - Make sure you have Node.js and npm installed on your computer. I have used the following versions:
-  Node – v22.9.0
-  Npm - 10.8.3
+  Node (>=v22.9.0)
+  Npm (>=10.8.3)
 - To check if node and npm version exists in your local machine :
 - In command prompt, run below commands
+
   - `npm -v`
   - `node -v`
 
@@ -34,6 +35,7 @@
 ![alt text](image.png)
 
 Project configs are defined under `cypress.config.js`
+
 Test data are stored under `cypress/fixtures/`
 
 - `properties.json`
@@ -43,7 +45,7 @@ Test data are stored under `cypress/fixtures/`
 
 To run your tests in headless mode
 
-- In Visual Studio Code, open the terminal. For cross-browser testing, use the following command:
+- In Vscode, open the terminal. For cross-browser testing, use the following command:
 
   `npm run test`
 
