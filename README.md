@@ -1,5 +1,3 @@
-## Setup 🛠️
-
 ### Pre-requisites
 
 - Install NodeJS and NPM package manager.
