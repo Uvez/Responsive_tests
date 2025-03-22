@@ -59,6 +59,7 @@ describe("Verify Responsive testing for the Profile Setting Form in various scre
       header.verifyAllAnchorElements();
     });
 
+    //verify element test case
     it(`Verify element layout on Landscape mode of   ${viewport.name} screen`, () => {
       cy.viewport(viewport.viewportHeight, viewport.viewportWidth);
       header.verifyHeaderElements();
