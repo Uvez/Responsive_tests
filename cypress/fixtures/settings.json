@@ -1,0 +1,21 @@
+{
+      "Salutation": "Mr",
+      "FirstName": "Dan",
+      "LastName":"Jose",
+      "DOB":"1998-12-01",
+      "address":"Dubai",
+      "City":"Dubai",
+      "State":"Dubai",
+      "Zip":"400230",
+      "Telephone":"97855678901",
+      "Email":"test@gmail.com",
+      "Website":"test.com",
+      "emptyfield": "",
+      "SuccessMessage":"Your profile has been updated.",
+      "ErrorMessage":"Please fill in the form",
+      "required_field_message":"Please fill out this field.",
+      "invalid_email":"testgmail.com",
+      "invalid_email_message":"Please include an '@' in the email address." 
+    
+
+}

@@ -1,0 +1,10 @@
+{
+    "text_font_size" : 12,
+    "text_color":"rgb(255, 0, 0)",
+    "header_font_size": "36px",
+    "display":"block",
+    "padding":"6px 12px",
+    "footer_font_size":"14px"
+
+
+}
